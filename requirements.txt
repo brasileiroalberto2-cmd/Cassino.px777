@@ -1,0 +1,5 @@
+# Cassino PX777 - Requirements
+# Este projeto usa apenas bibliotecas padrão do Python
+# Nenhuma dependência externa é necessária
+
+# Python 3.6+ é recomendado
