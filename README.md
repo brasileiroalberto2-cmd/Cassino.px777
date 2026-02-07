@@ -58,7 +58,9 @@ python main.py
 Cassino.px777/
 ├── main.py           # Ponto de entrada principal
 ├── jogos.py          # Implementação dos jogos
+├── test_jogos.py     # Testes automatizados
 ├── requirements.txt  # Dependências (nenhuma necessária)
+├── .gitignore        # Arquivos ignorados pelo Git
 └── README.md         # Este arquivo
 ```
 

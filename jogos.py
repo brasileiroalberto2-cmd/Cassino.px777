@@ -217,18 +217,18 @@ class SlotMachine(Jogos):
             ganho = aposta * multiplicador
             self.saldo += ganho
             print(f"🎉 JACKPOT! Três {simbolo}! Você ganhou R$ {ganho:.2f}!")
-            self.adicionar_historico('Slot Machine', aposta, f"{''.join(resultado)}", ganho)
+            self.adicionar_historico('Slot Machine', aposta, f"{' | '.join(resultado)}", ganho)
             ganhou = True
         elif resultado[0] == resultado[1] or resultado[1] == resultado[2]:
             ganho = aposta
             self.saldo += ganho
             print(f"✨ Dois símbolos iguais! Você ganhou R$ {ganho:.2f}!")
-            self.adicionar_historico('Slot Machine', aposta, f"{''.join(resultado)}", ganho)
+            self.adicionar_historico('Slot Machine', aposta, f"{' | '.join(resultado)}", ganho)
             ganhou = True
         else:
             self.saldo -= aposta
             print(f"😔 Você perdeu R$ {aposta:.2f}")
-            self.adicionar_historico('Slot Machine', aposta, f"{''.join(resultado)}", -aposta)
+            self.adicionar_historico('Slot Machine', aposta, f"{' | '.join(resultado)}", -aposta)
             ganhou = False
         
         self.exibir_saldo()
